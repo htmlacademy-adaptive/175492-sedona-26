@@ -31,28 +31,41 @@
         </nav>
       </header>
       <main class="main-container">
+        <h1 class="visually-hidden">Форма для вашего отзыва</h1>
         <div class="hero">
           <img class="hero__image" src="img/promotext.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
         </div>
         <section class="feedback">
-          <h1 class="feedback__title">Оставьте свой отзыв</h1>
-          <p class="feedback__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <header class="feedback__header">
+            <h2 class="feedback__title default-title">Оставьте свой отзыв</h2>
+            <p class="feedback__intro default-intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </header>
           <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="feedback__container about">
               <legend class="about__description">Представьтесь:</legend>
-              <label class="about__label" for="name">Имя*:</label>
-              <input class="about__input" type="text" name="name" id="name" placeholder="Пётр" required>
-              <label class="about__label" for="lastname">Фамилия*:</label>
-              <input class="about__input" type="text" name="lastname" id="lastname" placeholder="Пустота" required>
-              <label class="about__label" for="patronymic">Отчество:</label>
-              <input class="about__input" type="text" name="patronymic" id="patronymic" placeholder="Викторович">
+              <label class="about__label">
+                <span class="about__caption">Имя*:</span>
+                <input class="about__input" type="text" name="name" placeholder="Пётр" required>
+              </label>
+              <label class="about__label">
+                <span class="about__caption">Фамилия*:</span>
+                <input class="about__input" type="text" name="lastname" placeholder="Пустота" required>
+              </label>
+              <label class="about__label">
+                <span class="about__caption">Отчество:</span>
+                <input class="about__input" type="text" name="patronymic" placeholder="Викторович">
+              </label>
             </fieldset>
             <fieldset class="feedback__container contacts">
               <legend class="contacts__description">Контактная информация:</legend>
-              <label class="contacts__label" for="phone">Контактный телефон*:</label>
-              <input class="contacts__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
-              <label class="contacts__label" for="email">Электронная почта*:</label>
-              <input class="contacts__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+              <label class="contacts__label">
+                <span class="contacts__caption">Контактный телефон*:</span>
+                <input class="contacts__input" type="tel" name="phone" placeholder="Введите телефон" required>
+              </label>
+              <label class="contacts__label">
+                <span class="contacts__caption">Электронная почта*:</span>
+                <input class="contacts__input" type="email" name="email" placeholder="Введите e-mail" required>
+              </label>
             </fieldset>
             <fieldset class="feedback__container impression">
               <legend class="impression__description">Ваше общее впечатление:</legend>
@@ -98,36 +111,45 @@
         </section>
       </main>
       <footer class="page-footer">
-        <div class="page-footer__hashtag hashtag">
-          <a class="hashtag__link" href="https://twitter.com/hashtag/visitsedona">#visitSEDONA</a>
-        </div>
-        <section class="page-footer__social social">
-          <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">VKontakte.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube.</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <a class="page-footer__hashtag hashtag" href="https://twitter.com/hashtag/visitsedona">#visitSEDONA</a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">VKontakte.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube.</span>
+            </a>
+          </li>
+        </ul>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__image" width="27" height="35" src="img/logoacademy.svg" alt="HTML Academy">
+            <img class="copyright__image" width="27" height="35" src="img/logo-academy.svg" alt="HTML Academy">
           </a>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal modal--error">
+          <h2 class="modal__title">Что-то пошло не так!</h2>
+          <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal__button button">Ок</button>
+        </div>
+      </div>
+      <div class="modal-container">
+        <div class="modal modal--approve">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <button class="modal__button button">Закрыть окно</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
