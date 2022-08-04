@@ -7,11 +7,11 @@
   </head>
   <body class="page__body">
     <div class="page__container">
-      <header class="page-header">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
+      <header class="main-header">
+        <a class="main-header__logo logo" href="index.html">
+          <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
-        <nav class="page-header__navigation navigation">
+        <nav class="main-header__navigation navigation">
           <button class="navigation__toggle button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -38,8 +38,8 @@
         </div>
         <section class="gallery">
           <header class="gallery__header heading">
-            <h2 class="heading__title default-title">Фото и видео</h2>
-            <p class="heading__intro default-intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <h2 class="heading__title">Фото и видео</h2>
+            <p class="heading__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </header>
           <div class="gallery__list">
             <article class="gallery__item gallery-post">
@@ -47,13 +47,13 @@
               <h3 class="gallery-post__title">Неродные просторы</h3>
               <p class="gallery-post__author">Автор фото: Борис</p>
               <div class="gallery-post__like like">
-                <button class="gallery-post__button" type="button">
+                <button class="like__button" type="button">
                   <span class="visually-hidden">Мне нравится.</span>
-                  <svg class="gallery-post__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/>
                   </svg>
                 </button>
-                <span class="gallery-post__counter">1250</span>
+                <span class="like__counter">1250</span>
               </div>
             </article>
             <article class="gallery__item gallery-post">
@@ -61,13 +61,13 @@
               <h3 class="gallery-post__title">Местная растительность</h3>
               <p class="gallery-post__author">Автор фото: Сергей</p>
               <div class="gallery-post__like like">
-                <button class="gallery-post__button" type="button">
+                <button class="like__button" type="button">
                   <span class="visually-hidden">Мне нравится.</span>
-                  <svg class="gallery-post__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/>
                   </svg>
                 </button>
-                <span class="gallery-post__counter">143</span>
+                <span class="like__counter">143</span>
               </div>
             </article>
             <article class="gallery__item gallery-post">
@@ -75,13 +75,13 @@
               <h3 class="gallery-post__title">Дорога на север</h3>
               <p class="gallery-post__author">Автор фото: Петр</p>
               <div class="gallery-post__like like">
-                <button class="gallery-post__button" type="button">
+                <button class="like__button" type="button">
                   <span class="visually-hidden">Мне нравится.</span>
-                  <svg class="gallery-post__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/>
                   </svg>
                 </button>
-                <span class="gallery-post__counter">96</span>
+                <span class="like__counter">96</span>
               </div>
             </article>
             <article class="gallery__item gallery-post">
@@ -89,13 +89,13 @@
               <h3 class="gallery-post__title">Мост дьявола</h3>
               <p class="gallery-post__author">Автор фото: Антон</p>
               <div class="gallery-post__like like">
-                <button class="gallery-post__button" type="button">
+                <button class="like__button" type="button">
                   <span class="visually-hidden">Мне нравится.</span>
-                  <svg class="gallery-post__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path opacity=".3" d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"/>
                   </svg>
                 </button>
-                <span class="gallery-post__counter">254</span>
+                <span class="like__counter">254</span>
               </div>
             </article>
           </div>
@@ -103,8 +103,8 @@
         <article class="presentation">
           <header class="presentation__header heading">
             <h2 class="visually-hidden">Видеопрезентация города Седона.</h2>
-            <p class="pheading__title default-title"><strong>Все еще сомневаетесь?</strong></p>
-            <p class="heading__intro default-intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <p class="pheading__title"><strong>Все еще сомневаетесь?</strong></p>
+            <p class="heading__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </header>
           <img class="presentation__image" src="img/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация города Седона.">
           <button class="presentation__play" type="button">
@@ -112,9 +112,9 @@
           </button>
         </article>
       </main>
-      <footer class="page-footer">
-        <a class="page-footer__hashtag hashtag" href="https://twitter.com/hashtag/visitsedona">#visitSEDONA</a>
-        <ul class="page-footer__social social">
+      <footer class="main-footer">
+        <a class="main-footer__hashtag hashtag" href="https://twitter.com/hashtag/visitsedona">#visitSEDONA</a>
+        <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">VKontakte.</span>
@@ -131,7 +131,7 @@
             </a>
           </li>
         </ul>
-        <div class="page-footer__copyright copyright">
+        <div class="main-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="copyright__image" width="27" height="35" src="img/logo-academy.svg" alt="HTML Academy">
