@@ -11,10 +11,10 @@
         <a class="main-header__logo logo" href="index.html">
           <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
         </a>
+        <button class="main-header__toggle toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <nav class="main-header__navigation navigation">
-          <button class="navigation__toggle button" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
           <ul class="navigation__list">
             <li class="navigation__item navigation__item--active">
               <a class=navigation__link href="index.html">Главная</a>
@@ -106,7 +106,7 @@
               <legend class="form-group__description">Опишите свои эмоции:</legend>
               <textarea class="form-group__textarea" name="review" id="review" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
             </fieldset>
-            <button class="feedback-form__submit button" type="submit">Отправить отзыв</button>
+            <button class="feedback-form__submit button button--form" type="submit">Отправить отзыв</button>
             <small class="feedback-form__notice">* — обязательные поля</small>
           </form>
         </section>
