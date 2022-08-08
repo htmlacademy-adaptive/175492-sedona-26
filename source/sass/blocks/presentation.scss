@@ -1,0 +1,21 @@
+.presentation {
+  position: relative;
+  padding-top: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.presentation__header {
+  margin-bottom: 38px;
+}
+
+.presentation__image {
+  display: block;
+}
+
+.presentation__play {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-24px);
+}
