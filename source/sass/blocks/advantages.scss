@@ -1,0 +1,20 @@
+.advantages__header {
+  padding: 32px 18px 16px;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: advantage__description;
+}
+
+.advantages__sublist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__image {
+  display: block;
+}

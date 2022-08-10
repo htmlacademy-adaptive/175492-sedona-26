@@ -1,0 +1,25 @@
+.text-control {
+  display: block;
+}
+
+.text-control__caption {
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.text-control__input {
+  padding: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+  display: block;
+}
+
+.text-control__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
