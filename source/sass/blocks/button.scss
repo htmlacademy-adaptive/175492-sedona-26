@@ -1,13 +1,14 @@
+@use "../base.scss";
+
 .button {
   display: block;
-  box-sizing: border-box;
   font-family: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
-  background-color: #81b3d2;
+  color: variables.$color-text-accent;
+  background-color: variables.$primary-color;
   text-decoration: none;
   text-transform: uppercase;
   border: none;

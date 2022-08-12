@@ -1,3 +1,5 @@
+@use "../base.scss";
+
 .text-control {
   display: block;
 }
@@ -14,8 +16,8 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
-  background-color: #f2f2f2;
+  color: variables.$color-text-secondary;
+  background-color: variables.$secondary-color;
   border: none;
   display: block;
 }

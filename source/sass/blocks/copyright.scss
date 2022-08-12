@@ -1,7 +1,9 @@
+@use "../base.scss";
+
 .copyright {
   display: flex;
   align-items: center;
-  color: #000000;
+  color: variables.$color-text-secondary;
   text-transform: uppercase;
   text-decoration: none;
 }

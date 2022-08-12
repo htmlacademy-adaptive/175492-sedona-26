@@ -1,6 +1,7 @@
+@use "../base.scss";
+
 .navigation {
-  background-color: #81b3d2;
-  display: none;
+  background-color: variables.$primary-color;
 }
 
 .navigation__list {
@@ -11,13 +12,17 @@
 
 .navigation__link {
   display: block;
-  padding: 17px 20px 13px;
+  padding: 17px 20px 12px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  color: #ffffff;
+  color: variables.$color-text-accent;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.navigation__item:not(:last-child) {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
 }

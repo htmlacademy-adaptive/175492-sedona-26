@@ -1,8 +1,10 @@
+@use "../base.scss";
+
 .hashtag {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  color: #000000;
+  color: variables.$color-text-secondary;
   text-transform: uppercase;
   text-decoration: none;
 }

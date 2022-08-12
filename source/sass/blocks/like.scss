@@ -1,4 +1,6 @@
+@use "../base.scss";
+
 .like__counter {
   font-weight: 700;
-  color: #000000;
+  color: variables.$color-text-secondary;
 }
