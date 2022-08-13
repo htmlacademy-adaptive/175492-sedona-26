@@ -1,4 +1,4 @@
-@use "../base.scss";
+@use "../globals/variables.scss";
 
 .gallery-post {
   padding-top: 24px;
@@ -14,6 +14,8 @@
   margin: 0;
   margin-bottom: 15px;
   font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
   color: variables.$color-text-secondary;
   text-transform: uppercase;
 }
@@ -21,4 +23,6 @@
 .gallery-post__author {
   margin: 0;
   margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 21px;
 }

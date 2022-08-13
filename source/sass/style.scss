@@ -1,5 +1,5 @@
-@use "./base.scss";
-@use "./global.scss";
+@use "./globals/variables.scss";
+@use "./globals/global.scss";
 @use "./blocks/advantage-city.scss";
 @use "./blocks/advantage.scss";
 @use "./blocks/advantages.scss";
