@@ -1,15 +1,12 @@
 @use "../globals/variables.scss";
 
-.form-group {
-  border: none;
-}
-
 .form-group__control:not(:last-child) {
   margin-bottom: 16px;
 }
 
 .form-group__description {
   padding: 0;
+  padding-top: 24px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
@@ -22,6 +19,7 @@
 .form-group__textarea {
   display: block;
   padding: 16px;
+  width: 100%;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;

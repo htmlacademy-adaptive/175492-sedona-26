@@ -1,6 +1,13 @@
 .main-header {
   text-align: center;
   position: relative;
+  min-width: 56px;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main-header__toggle {
