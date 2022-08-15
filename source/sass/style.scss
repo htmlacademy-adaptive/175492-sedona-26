@@ -1,5 +1,7 @@
 @use "./globals/variables.scss";
-@use "./globals/global.scss";
+@use "./globals/globals.scss";
+@use "./globals/mixins.scss";
+@use "./globals/fonts.scss";
 @use "./blocks/main-container.scss";
 @use "./blocks/advantage-city.scss";
 @use "./blocks/advantage.scss";
@@ -9,7 +11,6 @@
 @use "./blocks/copyright.scss";
 @use "./blocks/feedback-form.scss";
 @use "./blocks/feedback.scss";
-@use "./blocks/font.scss";
 @use "./blocks/form-group.scss";
 @use "./blocks/gallery-post.scss";
 @use "./blocks/gallery.scss";

@@ -11,28 +11,28 @@
 <body class="page__body">
   <div class="page__container">
     <header class="main-header">
-      <a class="main-header__logo logo">
-        <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
-      </a>
-      <button class="main-header__toggle toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <nav class="main-header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--active">
-            <a class=navigation__link href="#">Главная</a>
+        <button class="navigation__toggle toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list navigation__list--opened">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active" href="#">Главная</a>
           </li>
           <li class="navigation__item">
-            <a class=navigation__link href="catalog.html">Фото и видео</a>
+            <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="navigation__item">
-            <a class=navigation__link href="form.html">Форма отзыва</a>
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
-            <a class=navigation__link href="htmlacademy.ru">HTML Academy</a>
+            <a class="navigation__link" href="htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
+      <a class="main-header__logo logo">
+        <img class="logo__image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона.">
+      </a>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Туризм в городе Седона.</h1>

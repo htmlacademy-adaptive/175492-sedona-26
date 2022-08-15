@@ -1,3 +1,29 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
+.feedback-form__row {
+  @include mixins.tablet {
+    display: flex;
+    justify-content: space-between;
+    gap: 88px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1px;
+      height: 95%;
+      position: absolute;
+      background-color: #dbdbdb;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @include mixins.desktop {
+    gap: 128px;
+  }
+}
+
 .feedback-form__group {
   margin: 0;
   padding: 0;
@@ -6,6 +32,15 @@
   padding-bottom: 34px;
   border: none;
   border-bottom: solid 1px #e5e5e5;
+
+  @include mixins.tablet {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 48px;
+    border-bottom: none;
+    border-top: solid 1px #dbdbdb;
+    flex: 1;
+  }
 }
 
 .feedback-form__notice {
@@ -15,4 +50,9 @@
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;
   text-align: end;
+
+  @include mixins.tablet {
+    font-size: 14px;
+    color: variables.$color-text-secondary;
+  }
 }

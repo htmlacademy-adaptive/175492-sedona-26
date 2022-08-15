@@ -1,4 +1,5 @@
 @use "../globals/variables.scss";
+@use "../globals/mixins.scss";
 
 .form-group__control:not(:last-child) {
   margin-bottom: 16px;
@@ -14,6 +15,21 @@
   color: variables.$color-text-secondary;
   text-transform: uppercase;
   text-align: center;
+
+  @include mixins.tablet {
+    padding-top: 0;
+    width: 100%;
+    max-width: 400px;
+    font-size: 21px;
+  }
+}
+
+.form-group__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
 
 .form-group__textarea {
@@ -28,8 +44,16 @@
   background-color: variables.$secondary-color;
   border: none;
   resize: none;
+
+  &::placeholder {
+    color: variables.$opacity-color;
+  }
 }
 
-.form-group__textarea::placeholder {
-  color: variables.$opacity-color;
+.form-group__footer {
+  @include mixins.tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 }

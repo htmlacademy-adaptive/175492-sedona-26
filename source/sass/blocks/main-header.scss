@@ -1,17 +1,17 @@
+@use "../globals/mixins.scss";
+
 .main-header {
   text-align: center;
   position: relative;
-  min-width: 56px;
+  min-height: 56px;
 }
 
 .main-header__logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-}
 
-.main-header__toggle {
-  position: absolute;
-  top: 17px;
-  right: 20px;
+  @include mixins.tablet {
+    z-index: 3;
+  }
 }
