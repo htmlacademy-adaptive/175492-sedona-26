@@ -2,10 +2,12 @@
 @use "./globals/globals.scss";
 @use "./globals/mixins.scss";
 @use "./globals/fonts.scss";
+@use "./blocks/visually-hidden.scss";
 @use "./blocks/main-container.scss";
 @use "./blocks/advantage-city.scss";
 @use "./blocks/advantage.scss";
 @use "./blocks/advantages.scss";
+@use "./blocks/panorama.scss";
 @use "./blocks/button.scss";
 @use "./blocks/checkbox-control.scss";
 @use "./blocks/copyright.scss";
@@ -31,4 +33,3 @@
 @use "./blocks/text-control.scss";
 @use "./blocks/error.scss";
 @use "./blocks/approve.scss";
-@use "./blocks/visually-hidden.scss";

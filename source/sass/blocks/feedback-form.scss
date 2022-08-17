@@ -43,6 +43,12 @@
   }
 }
 
+.feedback-form__group--border-none {
+  @include mixins.tablet {
+    border-top: none;
+  }
+}
+
 .feedback-form__notice {
   display: block;
   font-size: 12px;
@@ -53,6 +59,6 @@
 
   @include mixins.tablet {
     font-size: 14px;
-    color: variables.$color-text-secondary;
+    color: variables.$color-text-primary;
   }
 }

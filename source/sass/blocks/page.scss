@@ -13,7 +13,7 @@
   line-height: 21px;
   font-weight: 400;
   color: variables.$color-text-primary;
-  background-color: #e7e5e5;
+  background-color: variables.$secondary-color;
 }
 
 .page__container {
@@ -22,4 +22,13 @@
   min-height: 100%;
   margin: 0 auto;
   background-color: variables.$color-text-accent;
+
+  @include mixins.tablet {
+    max-width: variables.$tablet;
+  }
+
+  @include mixins.desktop {
+    max-width: variables.$desktop;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
 }

@@ -1,6 +1,14 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
 .advantage-city {
   padding: 23px 18px 52px 65px;
   text-transform: uppercase;
+
+  @include mixins.tablet {
+    padding: 158px 28px 59px;
+    text-align: center;
+  }
 }
 
 .advantage-city__title {

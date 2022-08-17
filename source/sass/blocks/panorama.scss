@@ -1,0 +1,14 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
+.panorama {
+  @include mixins.tablet {
+    display: flex;
+  }
+}
+
+.panorama--reverse {
+  @include mixins.tablet {
+    flex-direction: row-reverse;
+  }
+}
