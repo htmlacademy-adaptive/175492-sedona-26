@@ -49,6 +49,14 @@
   }
 }
 
+
+.feedback-form__group--textarea {
+  @include mixins.desktop {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+
 .feedback-form__notice {
   display: block;
   font-size: 12px;

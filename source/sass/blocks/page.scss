@@ -19,6 +19,7 @@
 .page__container {
   display: flex;
   flex-direction: column;
+  max-width: variables.$mobile;
   min-height: 100%;
   margin: 0 auto;
   background-color: variables.$color-text-accent;

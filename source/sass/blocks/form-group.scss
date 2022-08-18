@@ -56,4 +56,9 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+
+  @include mixins.desktop {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
 }
