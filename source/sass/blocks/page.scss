@@ -1,3 +1,6 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
 .page {
   height: 100%;
 }
@@ -9,13 +12,24 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
-  background-color: #e7e5e5;
+  color: variables.$color-text-primary;
+  background-color: variables.$secondary-color;
 }
 
 .page__container {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  max-width: variables.$mobile;
   min-height: 100%;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: variables.$color-text-accent;
+
+  @include mixins.tablet {
+    max-width: variables.$tablet;
+  }
+
+  @include mixins.desktop {
+    max-width: variables.$desktop;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
 }

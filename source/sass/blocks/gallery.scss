@@ -1,7 +1,55 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
 .gallery {
-  padding: 33px 20px 25px;
+  @include mixins.tablet {
+    padding: 0 60px 0;
+  }
+
+  @include mixins.tablet {
+    padding: 0;
+  }
+}
+
+.gallery__list {
+  @include mixins.tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mixins.desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery__item {
+  position: relative;
+
+  @include mixins.tablet {
+    background-color: variables.$secondary-color;
+  }
+}
+
+.gallery__item:not(:first-child):nth-of-type(odd) {
+  @include mixins.tablet {
+    background-color: #eaeaea;
+  }
+}
+
+.gallery__item:first-child {
+  grid-column: 1/-1;
 }
 
 .gallery__header {
-  padding-bottom: 42px;
+  padding: 33px 20px 42px;
+  border-bottom: solid 1px #e5e5e5;
+
+  @include mixins.tablet {
+    padding: 66px 102px 70px;
+    border-bottom: none;
+  }
+
+  @include mixins.desktop {
+    padding: 98px 380px 70px;
+  }
 }

@@ -1,21 +1,45 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
 .presentation {
   position: relative;
-  padding-top: 17px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @include mixins.tablet {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 40px;
+  }
+
+  @include mixins.desktop {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 84px;
+  }
 }
 
 .presentation__header {
-  margin-bottom: 38px;
+  padding: 17px 6px 38px;
+
+  @include mixins.tablet {
+    padding: 58px 101px 66px;
+  }
+
+  @include mixins.desktop {
+    padding: 66px 177px 58px;
+  }
 }
 
 .presentation__image {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .presentation__play {
   position: absolute;
   bottom: 60px;
   left: 50%;
-  transform: translateX(-24px);
+  transform: translateX(-50%);
 }

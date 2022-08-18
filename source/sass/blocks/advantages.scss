@@ -1,5 +1,16 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
 .advantages__header {
   padding: 32px 18px 16px;
+
+  @include mixins.tablet {
+    padding: 47px 124px 57px;
+  }
+
+  @include mixins.desktop {
+    padding: 59px 356px 45px;
+  }
 }
 
 .advantages__list {
@@ -7,14 +18,53 @@
   padding: 0;
   list-style: none;
   counter-reset: advantage__description;
+
+  @include mixins.tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__item {
+  width: 100%;
+
+  @include mixins.tablet {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+.advantages__item--column {
+  @include mixins.tablet {
+    width: 33.33%;
+  }
 }
 
 .advantages__sublist {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include mixins.tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__subitem {
+  @include mixins.tablet {
+    flex-basis: 33.33%;
+    flex-grow: 1;
+  }
 }
 
 .advantages__image {
   display: block;
+  background-color: variables.$primary-color;
+  object-fit: cover;
+
+  @include mixins.tablet {
+    width: 66.66%;
+  }
 }

@@ -1,23 +1,83 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
 .navigation {
-  background-color: #81b3d2;
-  display: none;
+  position: relative;
+}
+
+.navigation__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 3;
+
+  @include mixins.tablet {
+    display: none;
+  }
 }
 
 .navigation__list {
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   list-style: none;
+  background-color: variables.$primary-color;
+  display: none;
+
+  @include mixins.tablet {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: variables.$color-text-accent;
+  }
+}
+
+.navigation__list--opened {
+  display: block;
+
+  @include mixins.tablet {
+    display: grid;
+  }
+}
+
+.navigation__item:nth-child(4n+3) {
+  grid-column: 4/5;
+}
+
+.navigation__item:not(:last-child) {
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+
+  @include mixins.tablet {
+    box-shadow: none;
+  }
 }
 
 .navigation__link {
   display: block;
-  padding: 17px 20px 13px;
+  padding: 17px 20px 12px;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  color: #ffffff;
-  text-decoration: none;
+  color: variables.$color-text-accent;
   text-transform: uppercase;
+  text-decoration: none;
+
+  @include mixins.tablet {
+    padding-top: 18px;
+    padding-bottom: 17px;
+    font-size: 14px;
+    line-height: 21px;
+    color: variables.$color-text-secondary;
+  }
+}
+
+.navigation__link--active {
+  @include mixins.tablet {
+    color: #766357;
+  }
 }

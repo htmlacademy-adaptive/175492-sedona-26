@@ -1,3 +1,5 @@
+@use "../globals/mixins.scss";
+
 .heading {
   text-transform: uppercase;
   text-align: center;
@@ -9,7 +11,17 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 35px;
+
+  @include mixins.tablet {
+    font-size: 21px;
+  }
 }
+
+// .heading__title--size-l {
+//   @include mixins.tablet {
+//     font-size: 30px;
+//   }
+// }
 
 .heading__intro {
   margin: 0;

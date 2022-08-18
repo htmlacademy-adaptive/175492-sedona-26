@@ -1,5 +1,17 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
 .search {
   padding: 38px 18px 49px;
+
+  @include mixins.tablet {
+    padding: 61px 155px 58px;
+  }
+
+  @include mixins.desktop {
+    padding-left: 371px;
+    padding-right: 371px;
+  }
 }
 
 .search__header {
