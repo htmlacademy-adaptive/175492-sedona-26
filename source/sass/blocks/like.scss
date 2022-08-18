@@ -1,6 +1,25 @@
 @use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
+.like {
+  display: flex;
+  align-items: end;
+  gap: 14px;
+}
+
+.like__icon {
+  fill: variables.$opacity-color;
+
+  @include mixins.desktop {
+    fill: variables.$color-text-accent;
+  }
+}
 
 .like__counter {
   font-weight: 700;
   color: variables.$color-text-secondary;
+
+  @include mixins.desktop {
+    color: variables.$color-text-accent;
+  }
 }
