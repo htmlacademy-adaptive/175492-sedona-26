@@ -5,11 +5,53 @@
   position: relative;
 }
 
+.navigation--closed .navigation__toggle {
+  &::before {
+    content: "";
+    background-image: url("../img/burger-menu.svg");
+    display: block;
+    height: 22px;
+    width: 22px;
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  &::before {
+    content: "";
+    background-image: url("../img/close-menu.svg");
+    display: block;
+    height: 22px;
+    width: 22px;
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
 .navigation__toggle {
   position: absolute;
+  padding: 0;
   top: 17px;
   right: 20px;
   z-index: 3;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 
   @include mixins.tablet {
     display: none;
@@ -35,13 +77,14 @@
   }
 }
 
-.navigation__list--opened {
-  display: block;
 
-  @include mixins.tablet {
-    display: grid;
-  }
-}
+// .navigation__list--opened {
+//   display: block;
+
+//   @include mixins.tablet {
+//     display: grid;
+//   }
+// }
 
 .navigation__item:nth-child(4n+3) {
   grid-column: 4/5;
