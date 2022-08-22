@@ -171,6 +171,17 @@
     line-height: 21px;
     color: variables.$color-text-secondary;
   }
+
+  @include mixins.mobile-only {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
 
 .navigation__link[href] {
@@ -182,10 +193,6 @@
     &:active {
       color: variables.$color-text-secondary;
       opacity: 0.3;
-    }
-
-    &:focus-visible {
-      color: variables.$color-text-active;
     }
   }
 }
