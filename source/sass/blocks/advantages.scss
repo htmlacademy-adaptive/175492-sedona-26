@@ -25,6 +25,21 @@
   }
 }
 
+.advantages__list::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/advantages-triangle.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 37px;
+  width: 100%;
+
+  @include mixins.tablet {
+    display: none;
+  }
+}
+
 .advantages__item {
   width: 100%;
 

@@ -37,9 +37,20 @@
   object-fit: cover;
 }
 
-.presentation__play {
+.presentation__button {
   position: absolute;
+  padding: 0;
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
+  border: none;
+  background: transparent;
+
+  @include mixins.tablet {
+    bottom: 223px;
+  }
+}
+
+.presentation__button svg {
+  fill: rgba(255, 255, 255, 0.7);
 }
