@@ -7,4 +7,12 @@
   color: variables.$color-text-secondary;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: variables.$primary-color;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
