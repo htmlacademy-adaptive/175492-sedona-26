@@ -1,8 +1,8 @@
 @use "../globals/variables.scss";
 
-.text-control {
-  display: block;
-}
+// .text-control {
+//   display: block;
+// }
 
 .text-control__caption {
   margin-left: 16px;
@@ -14,6 +14,7 @@
 .text-control__input {
   padding: 16px;
   width: 100%;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -21,8 +22,17 @@
   background-color: variables.$secondary-color;
   border: none;
   display: block;
-}
 
-.text-control__input::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:not(:placeholder-shown) {
+    background-color: variables.$color-text-accent;
+    outline: 4px solid #e5e5e5;
+  }
 }
