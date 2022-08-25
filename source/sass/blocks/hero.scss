@@ -1,10 +1,18 @@
+@use "../globals/variables.scss";
+@use "../globals/mixins.scss";
+
 .hero {
   background-image: url("../img/hero-background.jpg");
   background-color: #3f5e72;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   text-align: center;
   padding-top: 90px;
+
+  @include mixins.tablet {
+    padding-top: 77px;
+  }
 }
 
 .hero::after {

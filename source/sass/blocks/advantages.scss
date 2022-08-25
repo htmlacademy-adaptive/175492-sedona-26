@@ -25,6 +25,21 @@
   }
 }
 
+.advantages__list::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/advantages-triangle.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 37px;
+  width: 100%;
+
+  @include mixins.tablet {
+    display: none;
+  }
+}
+
 .advantages__item {
   width: 100%;
 
@@ -43,19 +58,21 @@
 
 .advantages__sublist {
   margin: 0;
-  padding: 0;
+  padding: 23px 18px 52px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 22px;
   list-style: none;
 
   @include mixins.tablet {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 60px 30px 59px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 66px;
   }
-}
 
-.advantages__subitem {
-  @include mixins.tablet {
-    flex-basis: 33.33%;
-    flex-grow: 1;
+  @include mixins.desktop {
+    padding: 60px 70px 70px 70px;
   }
 }
 

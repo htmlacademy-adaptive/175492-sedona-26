@@ -22,7 +22,7 @@
     border-bottom: none;
   }
 
-  @include mixins.tablet {
+  @include mixins.desktop {
     padding: 64px 262px 67px;
   }
 }

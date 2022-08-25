@@ -13,11 +13,14 @@
 
 .gallery__list {
   @include mixins.tablet {
+    padding-left: 60px;
+    padding-right: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @include mixins.desktop {
+    padding: 0;
     grid-template-columns: repeat(3, 1fr);
   }
 }

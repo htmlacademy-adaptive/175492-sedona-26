@@ -17,11 +17,19 @@
   }
 }
 
-// .heading__title--size-l {
-//   @include mixins.tablet {
-//     font-size: 30px;
-//   }
-// }
+.heading__title--size-m {
+  @include mixins.tablet {
+    font-size: 30px;
+  }
+}
+
+.heading__title--size-l {
+  font-size: 21px;
+
+  @include mixins.tablet {
+    font-size: 30px;
+  }
+}
 
 .heading__intro {
   margin: 0;

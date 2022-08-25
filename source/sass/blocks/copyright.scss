@@ -1,4 +1,5 @@
 @use "../globals/variables.scss";
+@use "../globals/mixins.scss";
 
 .copyright {
   display: flex;
@@ -8,11 +9,27 @@
   text-decoration: none;
 }
 
+.copyright:hover > .copyright__text {
+  color: variables.$primary-color;
+}
+
+.copyright:hover > .copyright__icon {
+  fill: variables.$primary-color;
+}
+
+.copyright:active > .copyright__text {
+  color: #b3b3b3;
+}
+
+.copyright:active > .copyright__icon {
+  fill: #b3b3b3;
+}
+
 .copyright__text {
   margin: 0;
   margin-right: 13px;
 }
 
-.copyright__image {
-  display: block;
+.copyright__icon {
+  fill: variables.$color-text-secondary;
 }
