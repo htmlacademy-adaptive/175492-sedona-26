@@ -7,6 +7,26 @@
   gap: 14px;
 }
 
+.like__button {
+  padding: 0;
+  display: block;
+  font-family: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.like__button > .like__icon {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .like__icon {
   fill: variables.$opacity-color;
 
