@@ -3,7 +3,7 @@
 
 .hero {
   position: relative;
-  padding-top: 90px;
+  padding-top: 52px;
   min-height: 158px;
   background-image: url("../img/hero-bg.jpg");
   background-color: #3f5e72;
@@ -53,6 +53,7 @@
 }
 
 .hero--main {
+  padding-top: 90px;
   min-height: 389px;
 
   @include mixins.tablet {

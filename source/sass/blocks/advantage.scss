@@ -60,7 +60,7 @@
     padding: 42px 49px;
   }
 
-  @include mixins.tablet {
+  @include mixins.desktop {
     padding: 43px 43px 62px 42px;
   }
 }
