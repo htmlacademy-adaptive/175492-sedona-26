@@ -43,8 +43,12 @@
   }
 }
 
+.advantages__inner--reverse {
+  order: -1;
+}
+
 .advantages__item {
-  width: 100%;
+  // width: 100%;
 
   @include mixins.tablet {
     display: flex;
@@ -82,9 +86,10 @@
 .advantages__image {
   display: block;
   background-color: variables.$primary-color;
-  // object-fit: cover;
+  object-fit: cover;
 
   @include mixins.tablet {
     width: 100%;
+    height: 100%;
   }
 }

@@ -3,12 +3,13 @@
 
 .panorama {
   @include mixins.tablet {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
 .panorama--reverse {
   @include mixins.tablet {
-    flex-direction: row-reverse;
+    grid-template-columns: 2fr 1fr;
   }
 }
