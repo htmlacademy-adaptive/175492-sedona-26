@@ -2,18 +2,59 @@
 @use "../globals/mixins.scss";
 
 .advantage {
-  padding: 39px 18px 35px;
+  position: relative;
+  padding: 24px 34px;
   background-color: #eeeeee;
   text-align: center;
   text-transform: uppercase;
 
   @include mixins.tablet {
-    padding: 42px 33px;
+    padding: 42px 50px;
     flex-grow: 1;
   }
 
   @include mixins.desktop {
-    padding: 52px 85px;
+    padding: 43px 43px 62px;
+  }
+}
+
+.advantage--light {
+  padding: 39px 20px 36px;
+  background-color: variables.$primary-color;
+  color: variables.$color-text-accent;
+
+  @include mixins.tablet {
+    padding: 42px 32px;
+  }
+
+  @include mixins.desktop {
+    padding: 50px 60px 53px;
+  }
+}
+
+.advantage--border {
+  @include mixins.mobile-only {
+    &::before {
+      position: absolute;
+      right: 18px;
+      bottom: 0;
+      left: 18px;
+      height: 1px;
+      background-color: #d6d6d6;
+      content: "";
+    }
+  }
+}
+
+.advantage--padding {
+  @include mixins.tablet {
+    padding: 42px 34px;
+  }
+}
+
+.advantage--padding-top {
+  @include mixins.mobile-only {
+    padding-top: 70px;
   }
 }
 
@@ -26,6 +67,10 @@
 
   @include mixins.tablet {
     font-size: 21px;
+  }
+
+  @include mixins.desktop {
+    padding: 0 78px;
   }
 }
 
@@ -41,26 +86,4 @@
   counter-increment: advantage__description;
   content: "— №" counter(advantage__description) " —";
   margin-bottom: 17px;
-}
-
-.advantage--light {
-  background-color: variables.$primary-color;
-  color: variables.$color-text-accent;
-
-  @include mixins.tablet {
-    width: 33.33%;
-  }
-}
-
-.advantage--dark {
-  border-bottom: solid 1px #d6d6d6;
-
-  @include mixins.tablet {
-    border-bottom: none;
-    padding: 42px 49px;
-  }
-
-  @include mixins.tablet {
-    padding: 43px 43px 62px 42px;
-  }
 }
