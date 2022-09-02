@@ -9,27 +9,15 @@
   text-decoration: none;
 }
 
-.copyright:hover > .copyright__text {
+.copyright:hover {
   color: variables.$primary-color;
 }
 
-.copyright:hover > .copyright__icon {
-  fill: variables.$primary-color;
-}
-
-.copyright:active > .copyright__text {
+.copyright:active {
   color: #b3b3b3;
-}
-
-.copyright:active > .copyright__icon {
-  fill: #b3b3b3;
 }
 
 .copyright__text {
   margin: 0;
   margin-right: 13px;
-}
-
-.copyright__icon {
-  fill: variables.$color-text-secondary;
 }
