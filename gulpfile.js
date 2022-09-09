@@ -22,6 +22,13 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+// HTML
+
+const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(gulp.dest('build'));
+}
+
 // Server
 
 const server = (done) => {
@@ -45,5 +52,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, styles, server, watcher
 );
