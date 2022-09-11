@@ -2,7 +2,7 @@
 @use "../globals/mixins.scss";
 
 .search {
-  padding: 38px 18px 49px;
+  padding: 40px 18px 49px;
 
   @include mixins.tablet {
     padding: 61px 155px 58px;

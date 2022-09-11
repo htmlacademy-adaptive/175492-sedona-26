@@ -3,7 +3,7 @@
 
 .advantage {
   position: relative;
-  padding: 24px 34px;
+  padding: 25px 34px;
   background-color: #eeeeee;
   text-align: center;
   text-transform: uppercase;
@@ -19,7 +19,7 @@
 }
 
 .advantage--light {
-  padding: 39px 20px 36px;
+  padding: 39px 20px 35px;
   background-color: variables.$primary-color;
   color: variables.$color-text-accent;
 
@@ -52,9 +52,9 @@
   }
 }
 
-.advantage--padding-top {
+.advantage--light-padding {
   @include mixins.mobile-only {
-    padding-top: 70px;
+    padding: 71px 22px 39px 17px;
   }
 }
 
