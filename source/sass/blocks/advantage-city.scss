@@ -31,6 +31,7 @@
   background-position: top 2px left;
 
   @include mixins.tablet {
+    padding-left: 0;
     background-position: top center;
     background-size: 76px 68px;
   }
@@ -43,6 +44,7 @@
   background-position: top left 4px;
 
   @include mixins.tablet {
+    padding-left: 0;
     background-position: top center;
     background-size: 64px 75px;
   }
@@ -62,6 +64,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @include mixins.tablet {
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
 }
 
 .advantage-city__description {

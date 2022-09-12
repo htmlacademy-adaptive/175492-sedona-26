@@ -78,6 +78,7 @@
   transform: translateX(-50%);
   border: none;
   background: transparent;
+  cursor: pointer;
 
   @include mixins.tablet {
     bottom: 223px;

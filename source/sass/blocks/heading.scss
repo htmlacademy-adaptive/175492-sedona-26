@@ -31,8 +31,18 @@
   }
 }
 
-.heading__title--bottom {
+.heading__title--advantages-margin {
+  @include mixins.tablet {
+    margin-bottom: 29px;
+  }
+}
+
+.heading__title--search-margin {
   margin-bottom: 22px;
+
+  @include mixins.tablet {
+    margin-bottom: 30px;
+  }
 }
 
 .heading__intro {

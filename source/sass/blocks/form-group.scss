@@ -81,20 +81,3 @@
     border-color: #e5e5e5;
   }
 }
-
-.form-group__footer {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @include mixins.tablet {
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-
-  @include mixins.desktop {
-    padding-left: 96px;
-    padding-right: 96px;
-  }
-}

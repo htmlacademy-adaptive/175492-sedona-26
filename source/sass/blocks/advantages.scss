@@ -5,7 +5,7 @@
   padding: 34px 20px 16px 18px;
 
   @include mixins.tablet {
-    padding: 47px 124px 57px;
+    padding: 49px 124px 55px;
   }
 
   @include mixins.desktop {
@@ -70,14 +70,15 @@
   list-style: none;
 
   @include mixins.tablet {
-    padding: 60px 30px 59px 30px;
+    padding: 60px 30px 61px 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 66px;
   }
 
   @include mixins.desktop {
-    padding: 60px 70px 70px 70px;
+    padding: 60px 58px 82px 58px;
+    column-gap: 116px;
   }
 }
 

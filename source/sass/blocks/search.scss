@@ -9,11 +9,18 @@
   }
 
   @include mixins.desktop {
-    padding-left: 371px;
-    padding-right: 371px;
+    padding: 61px 371px 66px;
   }
 }
 
 .search__header {
   margin-bottom: 32px;
+
+  @include mixins.tablet {
+    margin-bottom: 42px;
+  }
+
+  @include mixins.desktop {
+    margin-bottom: 47px;
+  }
 }

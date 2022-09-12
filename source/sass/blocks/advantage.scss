@@ -70,7 +70,13 @@
   }
 
   @include mixins.desktop {
-    padding: 0 78px;
+    padding: 0 40px;
+  }
+}
+
+.advantage__title--padding {
+  @include mixins.desktop {
+    padding: 0 80px;
   }
 }
 
@@ -86,4 +92,14 @@
   counter-increment: advantage__description;
   content: "— №" counter(advantage__description) " —";
   margin-bottom: 17px;
+
+  @include mixins.tablet {
+    margin-bottom: 25px;
+  }
+}
+
+.advantage__description--padding {
+  @include mixins.desktop {
+    padding: 0 24px;
+  }
 }
