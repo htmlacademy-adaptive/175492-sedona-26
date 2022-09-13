@@ -18,7 +18,7 @@
   }
 
   @include mixins.tablet {
-    padding-top: 77px;
+    padding-top: 95px;
     min-height: 290px;
     background-image: url("../img/hero-bg-tablet.jpg");
 
@@ -29,7 +29,8 @@
   }
 
   @include mixins.desktop {
-    padding-top: 78px;
+    min-height: 300px;
+    padding-top: 104px;
     background-image: url("../img/hero-bg-desktop.jpg");
 
     @include mixins.retina {

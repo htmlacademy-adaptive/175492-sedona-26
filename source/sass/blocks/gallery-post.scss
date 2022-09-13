@@ -2,7 +2,7 @@
 @use "../globals/mixins.scss";
 
 .gallery-post {
-  padding: 24px 20px 25px;
+  padding: 24px 20px 27px;
   border-bottom: solid 1px #e5e5e5;
 
   @include mixins.tablet {
@@ -48,6 +48,10 @@
   line-height: 21px;
   color: variables.$color-text-secondary;
   text-transform: uppercase;
+
+  @include mixins.tablet {
+    margin-bottom: 1px;
+  }
 
   @include mixins.desktop {
     color: variables.$color-text-accent;

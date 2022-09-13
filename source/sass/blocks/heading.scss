@@ -45,6 +45,22 @@
   }
 }
 
+.heading__title--gallery-margin {
+  margin-bottom: 25px;
+
+  @include mixins.tablet {
+    margin-bottom: 32px;
+  }
+}
+
+.heading__title--presentation-margin {
+  margin-bottom: 27px;
+
+  @include mixins.tablet {
+    margin-bottom: 30px;
+  }
+}
+
 .heading__intro {
   margin: 0;
 }
