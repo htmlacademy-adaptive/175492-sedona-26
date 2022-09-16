@@ -5,7 +5,7 @@
   @include mixins.tablet {
     display: flex;
     justify-content: space-between;
-    gap: 88px;
+    gap: 12px;
     position: relative;
 
     &::after {
@@ -21,48 +21,16 @@
 
   @include mixins.desktop {
     gap: 128px;
-  }
-}
 
-.feedback-form__group {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 22px;
-  border: none;
-  border-bottom: solid 1px #e5e5e5;
-
-  @include mixins.tablet {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 46px;
-    border-bottom: none;
-    border-top: solid 1px #dbdbdb;
-    flex: 1;
-  }
-
-  @include mixins.desktop {
-    padding-bottom: 56px;
-  }
-}
-
-.feedback-form__group--border-none {
-  @include mixins.tablet {
-    border-top: none;
-  }
-}
-
-
-.feedback-form__group--textarea {
-  border: none;
-  padding-bottom: 56px;
-
-  @include mixins.desktop {
-    padding-left: 96px;
-    padding-right: 96px;
-    padding-bottom: 48px;
+    &::after {
+      content: "";
+      width: 1px;
+      height: 86%;
+      position: absolute;
+      background-color: #dbdbdb;
+      left: 51.5%;
+      transform: translateX(-50%);
+    }
   }
 }
 

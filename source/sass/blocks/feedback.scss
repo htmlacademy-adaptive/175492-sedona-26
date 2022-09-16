@@ -2,7 +2,7 @@
 @use "../globals/mixins.scss";
 
 .feedback {
-  padding-bottom: 24px;
+  padding-bottom: 27px;
 
   @include mixins.tablet {
     padding: 0 60px 64px;
@@ -23,6 +23,6 @@
   }
 
   @include mixins.desktop {
-    padding: 64px 262px 67px;
+    padding: 115px 262px 67px;
   }
 }

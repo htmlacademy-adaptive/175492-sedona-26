@@ -61,6 +61,14 @@
   }
 }
 
+.heading__title--feedback-margin {
+  margin-bottom: 24px;
+
+  @include mixins.desktop {
+    margin-bottom: 32px;
+  }
+}
+
 .heading__intro {
   margin: 0;
 }

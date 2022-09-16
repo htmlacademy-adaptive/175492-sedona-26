@@ -45,33 +45,33 @@
         </div>
         <section class="feedback">
           <header class="feedback__header heading">
-            <h2 class="heading__title heading__title--size-m">Оставьте свой отзыв</h2>
+            <h2 class="heading__title heading__title--size-m heading__title--feedback-margin">Оставьте свой отзыв</h2>
             <p class="heading__intro">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </header>
           <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="feedback-form__row">
-              <fieldset class="feedback-form__group feedback-form__group--border-none form-group">
-                <legend class="form-group__description">Представьтесь:</legend>
-                <label class="form-group__control text-control">
+              <fieldset class="feedback-form__group form-group form-group--width form-group--border-none">
+                <legend class="form-group__description form-group__description--padding-left">Представьтесь:</legend>
+                <label class="form-group__control form-group__control--margin-right text-control">
                   <span class="text-control__caption">Имя*:</span>
-                  <input class="text-control__input" type="text" name="name" placeholder="Имя" required>
+                  <input class="text-control__input" type="text" name="name" placeholder="Имя" value="Пётр" required>
                 </label>
-                <label class="form-group__control text-control">
+                <label class="form-group__control form-group__control--margin-right text-control">
                   <span class="text-control__caption">Фамилия*:</span>
-                  <input class="text-control__input" type="text" name="lastname" placeholder="Фамилия" required>
+                  <input class="text-control__input" type="text" name="lastname" placeholder="Фамилия" value="Пустота" required>
                 </label>
-                <label class="form-group__control text-control">
+                <label class="form-group__control form-group__control--margin-right text-control">
                   <span class="text-control__caption">Отчество:</span>
-                  <input class="text-control__input" type="text" name="patronymic" placeholder="Отчество">
+                  <input class="text-control__input" type="text" name="patronymic" placeholder="Отчество" value="Викторович">
                 </label>
               </fieldset>
-              <fieldset class="feedback-form__group feedback-form__group--border-none form-group">
-                <legend class="form-group__description">Контактная информация:</legend>
-                <label class="form-group__control text-control text-control--icon text-control--phone">
+              <fieldset class="feedback-form__group form-group form-group--border-none">
+                <legend class="form-group__description form-group__description--padding-right">Контактная информация:</legend>
+                <label class="form-group__control form-group__control--margin-left text-control text-control--icon text-control--phone">
                   <span class="text-control__caption">Контактный телефон*:</span>
                   <input class="text-control__input" type="tel" name="phone" placeholder="Введите телефон" required>
                 </label>
-                <label class="form-group__control text-control text-control--icon text-control--mail">
+                <label class="form-group__control form-group__control--margin-left text-control text-control--icon text-control--mail">
                   <span class="text-control__caption">Электронная почта*:</span>
                   <input class="text-control__input" type="email" name="email" placeholder="Введите e-mail" required>
                 </label>
@@ -103,8 +103,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="feedback-form__group form-group">
-              <legend class="form-group__description">Посещаемые достопримечательности:</legend>
+            <fieldset class="feedback-form__group form-group form-group--padding-bottom">
+              <legend class="form-group__description">Посещенные достопримечательности:</legend>
               <ul class="form-group__list form-group__list--checkbox">
                 <li class="form-group__item">
                   <label class="form-group__control checkbox-control">
@@ -136,9 +136,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="feedback-form__group feedback-form__group--textarea form-group">
+            <fieldset class="feedback-form__group form-group form-group--textarea-padding">
               <legend class="form-group__description">Опишите свои эмоции:</legend>
-              <textarea class="form-group__textarea" name="review" id="review" cols="23" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="form-group__textarea" name="review" id="review" cols="23" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <div class="feedback-form__footer">
               <button class="feedback-form__submit button button--form" type="submit">Отправить отзыв</button>
