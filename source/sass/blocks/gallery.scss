@@ -11,6 +11,20 @@
   }
 }
 
+.gallery__header {
+  padding: 38px 20px 36px;
+  border-bottom: solid 1px #e5e5e5;
+
+  @include mixins.tablet {
+    padding: 66px 164px 81px;
+    border-bottom: none;
+  }
+
+  @include mixins.desktop {
+    padding: 98px 380px 90px;
+  }
+}
+
 .gallery__list {
   @include mixins.tablet {
     padding-left: 60px;
@@ -41,18 +55,4 @@
 
 .gallery__item:first-child {
   grid-column: 1/-1;
-}
-
-.gallery__header {
-  padding: 33px 20px 42px;
-  border-bottom: solid 1px #e5e5e5;
-
-  @include mixins.tablet {
-    padding: 66px 102px 70px;
-    border-bottom: none;
-  }
-
-  @include mixins.desktop {
-    padding: 98px 380px 70px;
-  }
 }

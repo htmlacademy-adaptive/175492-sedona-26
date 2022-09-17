@@ -2,18 +2,25 @@
 @use "../globals/mixins.scss";
 
 .search {
-  padding: 38px 18px 49px;
+  padding: 40px 18px 49px;
 
   @include mixins.tablet {
     padding: 61px 155px 58px;
   }
 
   @include mixins.desktop {
-    padding-left: 371px;
-    padding-right: 371px;
+    padding: 61px 371px 66px;
   }
 }
 
 .search__header {
   margin-bottom: 32px;
+
+  @include mixins.tablet {
+    margin-bottom: 42px;
+  }
+
+  @include mixins.desktop {
+    margin-bottom: 47px;
+  }
 }

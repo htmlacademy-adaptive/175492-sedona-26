@@ -3,18 +3,19 @@
 
 .copyright {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: variables.$color-text-secondary;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-.copyright:hover {
-  color: variables.$primary-color;
-}
+  &:hover {
+    color: variables.$primary-color;
+  }
 
-.copyright:active {
-  color: #b3b3b3;
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .copyright__text {

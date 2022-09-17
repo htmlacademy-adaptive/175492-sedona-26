@@ -23,15 +23,16 @@
   padding: 17px 6px 38px;
 
   @include mixins.tablet {
-    padding: 58px 101px 66px;
+    padding: 58px 101px 88px;
   }
 
   @include mixins.desktop {
-    padding: 66px 177px 58px;
+    padding: 60px 177px 89px;
   }
 }
 
 .presentation__video {
+  display: block;
   width: 280px;
   height: 177px;
   background-image: url("../../img/video-mobile.jpg");
@@ -73,17 +74,27 @@
 .presentation__button {
   position: absolute;
   padding: 0;
-  bottom: 60px;
-  left: 50%;
+  bottom: 56px;
+  left: 52%;
   transform: translateX(-50%);
   border: none;
   background: transparent;
+  cursor: pointer;
 
   @include mixins.tablet {
-    bottom: 223px;
+    left: 50%;
+    bottom: 218px;
   }
 }
 
 .presentation__button svg {
   fill: rgba(255, 255, 255, 0.7);
+
+  &:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  &:active {
+    fill: rgba(255, 255, 255, 0.4);
+  }
 }

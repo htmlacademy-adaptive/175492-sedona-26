@@ -7,6 +7,10 @@
   flex-wrap: wrap;
   list-style: none;
   gap: 6px;
+
+  @include mixins.tablet {
+    padding-right: 6px;
+  }
 }
 
 .social__link {

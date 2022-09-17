@@ -122,6 +122,7 @@
   list-style: none;
 
   @include mixins.tablet {
+    position: static;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background-color: variables.$color-text-accent;
