@@ -40,6 +40,7 @@
   border-radius: 4px;
   background-color: variables.$secondary-color;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
 

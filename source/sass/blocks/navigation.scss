@@ -41,30 +41,6 @@
   }
 }
 
-.navigation--opened .navigation__list {
-  @include mixins.mobile-only {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    background-color: variables.$primary-color;
-  }
-}
-
-.navigation--opened .navigation__list::before {
-  @include mixins.mobile-only {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    height: 7px;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-  }
-}
-
 .navigation--closed .navigation__item {
   @include mixins.mobile-only {
     display: none;
@@ -121,11 +97,33 @@
   width: 100%;
   list-style: none;
 
+  @include mixins.mobile-only {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: variables.$primary-color;
+  }
+
   @include mixins.tablet {
     position: static;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background-color: variables.$color-text-accent;
+  }
+}
+
+.navigation__list::before {
+  @include mixins.mobile-only {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   }
 }
 
@@ -198,7 +196,7 @@
   }
 }
 
-.navigation__link--active {
+.navigation__link[aria-current="page"] {
   @include mixins.tablet {
     color: #766357;
   }
